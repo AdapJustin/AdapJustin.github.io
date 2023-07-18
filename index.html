@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- https://alexcalia.com -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <script src="https://kit.fontawesome.com/63ad6f46a1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <link rel="stylesheet" href="index.css">
     <div id="nav-icon">
         <span></span>
         <span></span>
@@ -16,15 +18,18 @@
         <span></span>
     </div>
     <nav id='navigation'>
-        <h1>JA</h1>
+        <a href="#" id="logo"><h1>JA</h1></a>
         <div>
             <a href="#home">
-                <i class="fas fa-house"></i>         
-                <p class="icon-desc">Home</p>
-            </a>
-            <a href="#about">
                 <i class="fas fa-user"></i>
                 <p class="icon-desc">About</p>
+            <a href="#education">
+                <i class="fas fa-building-columns"></i>
+                <p class="icon-desc">Education</p>
+            </a>
+            <a href="#experience">
+                <i class="fas fa-briefcase"></i>
+                <p class="icon-desc">Experience</p>
             </a>
             <a href="#skills">
                 <i class="fas fa-code"></i> 
@@ -43,11 +48,12 @@
     </nav>
     <section id="home">
         <div id="home-content">
-            <img src="img/pic.png">
+            <img src="img/about-img.png">
             <div id="home-content-details">
                 <h2>Hello there! 👋 I'm</h2>
                 <h1><span style="color:blue">Justin</span> Adap</h1>
-                <p>A <span style="color:blue">Computer Science Student</span> passionate about software development and dedicated in improving his craft.</p>
+                <p id='about-desc-1'>An aspiring <span style="color:blue">software engineer</span> and <span style="color:blue">full-stack developer</span> based in Quezon City, PH. <br/><br/>
+                <p id='about-desc-2'>I am passionate about building things and solving complex problems. I have experience in developing Full-stack Applications, Mobile Applications, and Artificial Intelligence.</p>
                 <div id="home-content-details-links">
                     <a href="files/Justin-Adap-Resume.pdf" target="_blank">Resume</a>
                     <a href="https://github.com/AdapJustin" target="_blank"><i class="fa-brands fa-github"></i> </a>
@@ -57,10 +63,36 @@
             </div>
         </div>
     </section>
-    <section id="about">
-        <h1>ABOUT ME</h1>
-        <div>
-            <p>I am currently a 4th year Computer Science student specializing in Core Computer Science in University of Santo Tomas - Manila. I have been coding to satisfy my academic requirements and for my own enjoyment since I was in high school. Through my journey, I have gained experience on the following fields: full stack web development, mobile app development, Data Analysis, Compiler Design, and Artificial Intelligence.</p>
+    <section id="education">
+        <h1>EDUCATION</h1>
+        <div class='education-section'>
+            <img src="img/grad.png">
+            <div>
+                <p class='educ-1'>University of Santo Tomas - Manila</p>
+                <p class='educ-2'>BS Computer Science specializing in Core Computer Science</p>
+                <p class='educ-3'>August 2019 - June 2023</p>
+                <p class='educ-4'>Awards Received:</p>
+                <ul>
+                    <li>Dean’s List - 1st & 2nd Semester (2020-2023)</li>
+                    <li> Best Thesis Award – CS Colloquium 2023</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h1>EXPERIENCE</h1>
+        <div class='education-section'>
+            <img src="img/exp-gif.gif">
+            <div>
+                <p class='educ-1'>Web Developer Intern</p>
+                <p class='educ-2'>The Coding School</p>
+                <p class='educ-3'>Feb 2023 - Jun 2023</p>
+                <ul>
+                    <li>Created a full-stack web development course covering React, Node, ExpressJS, and Fetch API</li>
+                    <li>Revised courses covering HTML, CSS, Bootstrap, and jQuery</li>
+                    <li>Managed the company’s Shopify website</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section id="skills">
@@ -79,16 +111,16 @@
                 <p>JavaScript</p>
             </div>
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
-                <p>jQuery</p>
-            </div>
-            <div>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                 <p>React</p>
             </div>
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                <p>MySQL</p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                <p>NodeJS</p>
+            </div>
+            <div>       
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" />
+                <p>Jest</p>
             </div>
             <div>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
@@ -99,16 +131,16 @@
                 <p>Python</p>
             </div>
             <div>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                <p>MySQL</p>
+            </div>
+            <div>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
                 <p>Android</p>
             </div>
             <div>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
                 <p>Flutter</p>
-            </div>
-            <div>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
-                <p>Jupyter</p>
             </div>
             <div>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
@@ -162,9 +194,12 @@
             <div class="projects-module">
                 <img src="img/5.PNG">
                 <div>
-                    <h2>Personal Portfolio</h2>
-                    <h3>Technologies Used: <span style="color:blue">HTML, CSS, JavaScript, jQuery</span></h3>
-                    <p>Developed a responsive personal portfolio website.</p>
+                    <h2>Scentopia – A Fragrance Online Store</h2>
+                    <h3>Technologies Used: <span style="color:blue">JavaScript, React, Node, ExpressJS, MySQL, Jest</span></h3>
+                    <p>A personal full-stack web application project: designed a mockup using Figma, developed a
+                        component-based project using React for the frontend, Node and ExpressJS for the backend,
+                        MySQL for the database, and Jest for unit testing.
+                    </p>
                     <a href="https://adapjustin.github.io" target="_blank">Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -203,7 +238,7 @@
         <p>© Justin Adap 2023</p>
     </footer>
 <script src="index.js"></script>
-<link rel="stylesheet" href="index.css">
+
 
 </body>
 </html>
